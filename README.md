@@ -6,7 +6,9 @@
 
 ### Seus estudos organizados em um só lugar
 
-**Gestão Ágil** · Atividade prática de Scrum · Trabalho em grupo · UNICID 2026
+**Gestão Ágil** · Prof. Alexandre Carrocine · 2º semestre · UNICID 2026
+
+<sub>Atividade prática de Scrum · 4 sprints · Trabalho em grupo</sub>
 
 [![Site 1](https://img.shields.io/badge/Site_1-ale--aprender.netlify.app-2F6BFF?style=for-the-badge)](https://ale-aprender.netlify.app)
 [![Site 2](https://img.shields.io/badge/Site_2-ale0.netlify.app-FFC107?style=for-the-badge)](https://ale0.netlify.app)
@@ -131,7 +133,7 @@ Entrar na conta → Calendário → Radar de prazos → Planejamento de estudos 
 | **Product Owner** | Henrique Novais | Ordena o backlog e decide as prioridades. |
 | **Scrum Master** | Mateus Alves | Cuida dos tempos e remove impedimentos. |
 | **Developers** | 7 integrantes | Planejam, constroem e testam o protótipo. |
-| **Stakeholder** | O professor | Representa o coordenador e dá feedback na Review. |
+| **Stakeholder** | Prof. Alexandre Carrocine | Representa o coordenador e dá feedback na Review. |
 
 > **PO:** o quê e por quê · **Developers:** como construir · **Scrum Master:** como trabalhar melhor
 
