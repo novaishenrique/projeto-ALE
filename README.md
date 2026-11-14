@@ -1,16 +1,18 @@
 <div align="center">
 
-<img src="capa.png" alt="ALE – Seus estudos organizados em um só lugar" width="100%">
+<img src=".github/capa.jpg" alt="ALE: seus estudos organizados em um só lugar" width="100%">
 
 # ALE
 
 ### Seus estudos organizados em um só lugar
 
-Organizador de entregas acadêmicas · Atividade Prática de Scrum
+**Gestão Ágil** · Atividade prática de Scrum · Trabalho em grupo · UNICID 2026
 
-[![ALE Aprender](https://img.shields.io/badge/Site_1-ale--aprender.netlify.app-2F6BFF?style=for-the-badge)](https://ale-aprender.netlify.app)
-[![ALE](https://img.shields.io/badge/Site_2-ale0.netlify.app-FFC107?style=for-the-badge)](https://ale0.netlify.app)
+[![Site 1](https://img.shields.io/badge/Site_1-ale--aprender.netlify.app-2F6BFF?style=for-the-badge)](https://ale-aprender.netlify.app)
+[![Site 2](https://img.shields.io/badge/Site_2-ale0.netlify.app-FFC107?style=for-the-badge)](https://ale0.netlify.app)
+[![Documentação](https://img.shields.io/badge/Documentação-PDF-555555?style=for-the-badge)](docs/Documentacao_ALE_Scrum.pdf)
 
+[![CI](https://github.com/novaishenrique/projeto-ALE/actions/workflows/ci.yml/badge.svg)](https://github.com/novaishenrique/projeto-ALE/actions/workflows/ci.yml)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -24,24 +26,28 @@ Organizador de entregas acadêmicas · Atividade Prática de Scrum
 
 ## Sumário
 
-- [O problema](#o-problema)
-- [A solução](#a-solução)
+- [Sobre o projeto](#sobre-o-projeto)
 - [Demonstração](#demonstração)
 - [Time Scrum](#time-scrum)
 - [Objetivo do produto](#objetivo-do-produto)
 - [Product Backlog](#product-backlog)
 - [As 4 sprints](#as-4-sprints)
+- [Modelagem](#modelagem)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
 - [Armazenamento e limitações](#armazenamento-e-limitações)
 - [Acessibilidade e inclusão](#acessibilidade-e-inclusão)
 - [Dificuldades e melhorias futuras](#dificuldades-e-melhorias-futuras)
 - [O aparelho: Assistente de voz ALE](#o-aparelho-assistente-de-voz-ale)
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Como executar](#como-executar)
 - [Equipe](#equipe)
 
 ---
 
-## O problema
+## Sobre o projeto
+
+### O problema
 
 **Trabalhos e prazos estão espalhados, e o aluno se perde.**
 
@@ -55,9 +61,7 @@ Organizador de entregas acadêmicas · Atividade Prática de Scrum
 >
 > — Coordenador da instituição (o professor)
 
----
-
-## A solução
+### A solução
 
 **ALE: as entregas do aluno em um só lugar.**
 
@@ -75,16 +79,26 @@ Organizador de entregas acadêmicas · Atividade Prática de Scrum
 Os dois sites estão publicados no Netlify. Aponte a câmera do celular para o QR code ou clique nos links.
 
 <p align="center">
-  <img src="qr-codes.png" alt="QR codes dos sites ALE Aprender e ALE" width="800">
+  <img src="imagens/qr-codes.png" alt="QR codes dos sites ALE Aprender e ALE" width="800">
 </p>
 
 - **Site 1 – [ALE Aprender](https://ale-aprender.netlify.app):** o professor cadastra um trabalho e o aluno do 8º ano envia a resposta.
 - **Site 2 – [ALE](https://ale0.netlify.app):** calendário, radar de prazos, planejamento e entregas.
 
+### Telas
+
+| ALE Aprender · boas-vindas | ALE Aprender · anos iniciais |
+|:---:|:---:|
+| <img src="imagens/ale-aprender-boas-vindas.png" alt="Tela de boas-vindas do ALE Aprender, com a barra de acessibilidade" width="420"> | <img src="imagens/ale-aprender-anos-iniciais.png" alt="Painel do estudante dos anos iniciais" width="420"> |
+| **ALE Aprender · anos finais** | **ALE Aprender · professor** |
+| <img src="imagens/ale-aprender-anos-finais.png" alt="Painel do estudante dos anos finais, com as próximas entregas" width="420"> | <img src="imagens/ale-aprender-professor.png" alt="Painel do professor, com as turmas e o cadastro de atividades" width="420"> |
+| **ALE · entrar** | **ALE · painel do aluno** |
+| <img src="imagens/ale-entrar.png" alt="Tela de entrar do ALE, com as contas de teste" width="420"> | <img src="imagens/ale-painel.png" alt="Painel do aluno no ALE, com as entregas pendentes" width="420"> |
+
 ### Fluxo da demonstração
 
 <p align="center">
-  <img src="fluxo-demonstracao.png" alt="Fluxograma da demonstração prática dos dois sites" width="900">
+  <img src="imagens/fluxo-demonstracao.png" alt="Fluxograma da demonstração prática dos dois sites" width="900">
 </p>
 
 <details>
@@ -179,6 +193,26 @@ flowchart LR
 
 ---
 
+## Modelagem
+
+Os dois diagramas são as Figuras 1 e 2 da [documentação](docs/Documentacao_ALE_Scrum.pdf).
+
+### Casos de uso (UML)
+
+Os casos de uso destacados em amarelo formam o MVP. O assistente físico aparece como visão para depois do MVP.
+
+<p align="center">
+  <img src="imagens/diagrama-casos-de-uso.png" alt="Diagrama de casos de uso da plataforma ALE Aprender, com os atores Estudante, Professor e Assistente físico" width="760">
+</p>
+
+### Processo do organizador de entregas (BPMN)
+
+<p align="center">
+  <img src="imagens/bpmn-organizador-de-entregas.png" alt="Diagrama BPMN do processo do organizador de entregas, com as raias Professor, Estudante e Sistema ALE" width="560">
+</p>
+
+---
+
 ## Funcionalidades
 
 **Dois sites, dois layouts.**
@@ -214,7 +248,7 @@ Organização acadêmica, com outro layout:
 | **JavaScript** | Funcionamento | Navegação, cadastros, jogos, prazos e leitor de voz. |
 
 - **Recursos:** Web Speech API (leitor de voz), VLibras (Libras) e Google Fonts.
-- **Publicação:** os dois sites no Netlify; o ALE troca de tela por rotas, como `#/entrar`.
+- **Publicação:** os dois sites no Netlify; o ALE troca de tela por rotas, como `#/entrar`, e pode ser instalado no celular (manifesto e service worker).
 
 ---
 
@@ -234,6 +268,9 @@ flowchart LR
 
 > [!WARNING]
 > **Limitações:** sem servidor nem banco de dados · não sincroniza entre aparelhos · limpar o navegador apaga tudo · sem cópia de segurança.
+
+> [!NOTE]
+> O Apêndice A da documentação lista o que ainda falta no ALE Aprender para cumprir o backlog: a data de entrega no cadastro (RF01), a ordenação por prazo (RF03) e a situação do prazo (RF04).
 
 ---
 
@@ -273,7 +310,7 @@ Em todas as telas, a barra de acessibilidade fica no topo do ALE Aprender.
 | **04** | **ALE Offline** | Boa parte das funções mesmo sem internet. |
 
 <p align="center">
-  <img src="alewatch.jpg" alt="ALEWatch, relógio do ALE com pulseira de cortiça" width="260">
+  <img src="imagens/alewatch.jpg" alt="ALEWatch, relógio do ALE com pulseira de cortiça" width="260">
   <br>
   <sub>ALEWatch</sub>
 </p>
@@ -285,7 +322,7 @@ Em todas as telas, a barra de acessibilidade fica no topo do ALE Aprender.
 O organizador na mesa de estudos, sem precisar pegar o celular.
 
 <p align="center">
-  <img src="assistente-de-voz.jpg" alt="Assistente de voz ALE com anel de luz" width="560">
+  <img src="imagens/assistente-de-voz.jpg" alt="Assistente de voz ALE com anel de luz" width="560">
 </p>
 
 - 🗣️ Fala o resumo do dia
@@ -294,6 +331,46 @@ O organizador na mesa de estudos, sem precisar pegar o celular.
 - ❓ Simulados e dúvidas por voz
 
 > **ALE Eco:** plástico reciclado, tecido de fibras recicladas e base de madeira reaproveitada.
+
+---
+
+## Estrutura do repositório
+
+```
+.
+├── sites/
+│   ├── ale-aprender/        ← Site 1: index.html, style.css e script.js
+│   └── ale/                 ← Site 2: index.html, manifesto, service worker e ícones
+├── docs/
+│   └── Documentacao_ALE_Scrum.pdf   ← documentação completa (ABNT, 46 páginas)
+├── imagens/                 ← QR codes, telas, diagramas e fotos usados neste README
+├── .github/
+│   ├── capa.jpg             ← capa deste README
+│   ├── tests/repo.test.js   ← testes automáticos
+│   └── workflows/ci.yml     ← roda os testes a cada push
+└── README.md
+```
+
+O código dos sites é o mesmo publicado no Netlify. O ALE Aprender também tem um repositório próprio, mantido pelo Wendel: [WendelRL/ale-aprender](https://github.com/WendelRL/ale-aprender).
+
+---
+
+## Como executar
+
+Os sites não precisam de instalação nem de servidor:
+
+1. Baixe o repositório (**Code → Download ZIP**) ou clone com `git clone https://github.com/novaishenrique/projeto-ALE.git`.
+2. Abra `sites/ale-aprender/index.html` ou `sites/ale/index.html` no navegador.
+
+No ALE, use os botões **Entrar como aluno** ou **Entrar como professor** para ver os dados de demonstração. O VLibras precisa de internet; o resto funciona sem.
+
+**Testes automáticos** (Node 20 ou mais novo):
+
+```bash
+node --test .github/tests/*.test.js
+```
+
+Eles conferem os links e imagens do README, a sintaxe dos scripts, se todo botão do ALE Aprender chama uma função que existe, os recursos de acessibilidade e se o manifesto e o service worker do ALE apontam para arquivos que existem.
 
 ---
 
@@ -315,8 +392,6 @@ O organizador na mesa de estudos, sem precisar pegar o celular.
 
 <div align="center">
 
-**ALE** · Organizador de entregas acadêmicas
+<sub>ALE · Gestão Ágil · Gestão da Tecnologia da Informação · UNICID 2026</sub>
 
 </div>
-
-**Perguntas?**
